@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.imooc.com/video/2270 -->
+<html><style type="text/css" id="44398380629"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta property="qc:admins" content="77103107776553571676375">
+<meta property="wb:webmaster" content="c4f857219bfae3cb">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta name="Keywords" content="">
+<meta name="Description" content="超酷的互联网、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！">
+
+<title>使用WebView显示网页（一）-慕课网</title>
+
+
+
+<link rel="stylesheet" href="./example_files/layer.css">
+
+<script type="text/javascript">
+  var OP_CONFIG={"module":"course","page":"video","userInfo":{"uid":"2198636","nickname":"\u5927B\u5377\u571f\u91cd\u6765","head":"http:\/\/img.mukewang.com\/user\/54584e2c00010a2c02200220-80-80.jpg","usertype":"1","roleid":0}};
+  var tplDef={
+	"url_space_u":"/space/u",
+	"url_space_index":"/space/index",
+    "url_space_course":"/space/course",
+    "myclub_rule":"/about/faq?t=3",
+    "url_course_qadetail":"/qadetail",
+    "media_id":"2270"
+  }
+  var seajsTimestamp="v=2016070111957";
+var courseName="Android攻城狮的第二门课（第1季）";
+</script>
+
+
+
+<script type="text/javascript">
+var pageInfo = { mid : 2270 };
+var video_id= 1764;
+var course_id = 107;
+var chapter_id = 630;
+var ispreview ='0';
+var videoTitle = "7-2 使用WebView显示网页（一）";
+</script>
+
+<link rel="stylesheet" href="./example_files/saved_resource" type="text/css">
+<script charset="utf-8" async="" src="./example_files/jquery.js"></script><script charset="utf-8" async="" src="./example_files/seajs-text.js"></script><script charset="utf-8" async="" src="./example_files/common.js"></script><script charset="utf-8" async="" src="./example_files/string.js"></script><script charset="utf-8" async="" src="./example_files/suggest.js"></script><script charset="utf-8" async="" src="./example_files/store.js"></script><script charset="utf-8" async="" src="./example_files/json.js"></script><script charset="utf-8" async="" src="./example_files/im.js"></script><script charset="utf-8" async="" src="./example_files/video.js"></script><script charset="utf-8" async="" src="./example_files/socket.io.min.js"></script><script charset="utf-8" async="" src="./example_files/jwplayer.js"></script><script charset="utf-8" async="" src="./example_files/jquery.nanoscroller.js"></script><script charset="utf-8" async="" src="./example_files/drag.js"></script><script charset="utf-8" async="" src="./example_files/animate-achievement.js"></script><script charset="utf-8" async="" src="./example_files/course_detail_common.js"></script><script charset="utf-8" async="" src="./example_files/verify-code.js"></script><script charset="utf-8" async="" src="./example_files/guideLayer.js"></script><script charset="utf-8" async="" src="./example_files/layer.min.js"></script><script charset="utf-8" async="" src="./example_files/jquery.scrollbar.js"></script><link charset="utf-8" rel="stylesheet" href="./example_files/jquery.scrollbar.css"><script charset="utf-8" async="" src="./example_files/placeholder.js"></script><script charset="utf-8" async="" src="./example_files/autocomplete.js"></script><script charset="utf-8" async="" src="./example_files/wiki-search.js"></script><script charset="utf-8" async="" src="./example_files/course_note.js"></script><script charset="utf-8" async="" src="./example_files/ajax-right-recommend.js"></script><script charset="utf-8" async="" src="./example_files/ajax-pl-list.js"></script><script charset="utf-8" async="" src="./example_files/ajax-otherscode-list.js"></script><script charset="utf-8" async="" src="./example_files/ajax-discuss-list.js"></script><script charset="utf-8" async="" src="./example_files/ajax-note-list.js"></script><script charset="utf-8" async="" src="./example_files/ajax-wiki-list.js"></script><script charset="utf-8" async="" src="./example_files/doT.js"></script><script charset="utf-8" async="" src="./example_files/paging.js"></script><script charset="utf-8" async="" src="./example_files/picViewer.js"></script><link href="./example_files/ueditor.css" type="text/css" rel="stylesheet"><script src="./example_files/share.js"></script><link rel="stylesheet" href="./example_files/share_style0_16.css"><script src="./example_files/ZeroClipboard.js" type="text/javascript" defer="defer"></script><style type="text/css"></style></head>
+<body style="">
+
+
+<div id="header" class="course-detail-header">
+  <div class="cd-inner clearfix">
+      <ul class="l">
+        <li class="nv nv-goback"><a href="http://www.imooc.com/learn/107" class="revert l"><i class="icon icon-left"></i></a></li>
+        <li class="nv nv-menu">
+          <a href="javascript:;" class="chaptername J-chaptername" data-id="2270" style="cursor:text;"><span>Android攻城狮的第二门课（第1季...</span><em>7-2 使用WebView显示网页（一）...</em></a>
+        </li>
+                <li class="nv nv-follow">
+                    <a href="javascript:void(0)" data-id="107" class="js-btn-follow course-follow" title="关注此课程"><i class="icon icon-heart"></i><em>关注</em></a>
+                  </li>
+                <li class="nv nv-share bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1468848155227">
+          <!-- note:bdshare cannt user inner icon tag-->
+            <span>分享</span>
+            <a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a class="bds_qzone" data-cmd="qzone" href="http://www.imooc.com/video/2270#" title="分享到QQ空间"></a>
+            <a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+
+          <div style="display:none" id="coursePic"><img src="./example_files/53bf89320001073f06000338-590-330.jpg"></div>
+        </li>
+        <li class="nv credit-tips js-share-statue" style="display: none;">
+          <span>分享即可 +</span><strong>1积分</strong>
+        </li>
+      </ul>
+      
+              <div id="login-area">
+            <ul class="clearfix logined">
+                <li class="header-app">
+                    <a href="http://www.imooc.com/mobile/app">
+                        <span class="icon-appdownload"></span>
+                    </a>
+                    <div class="QR-download">
+                        <p id="app-text">慕课网APP下载</p>
+                        <p id="app-type">iPhone / Android / iPad</p>
+                        <img src="./example_files/QR-code.jpg">
+                    </div>
+                </li>
+                <li class="remind_warp">
+                    <i class="msg_remind" style="display: none;"></i>
+                    <a target="_blank" rel="nofollow" href="http://www.imooc.com/u/2198636/notices"><i class="icon-notifi"></i></a>
+                </li>
+        	    <li class="my_message">
+                    <a href="http://www.imooc.com/message" rel="nofollow" title="我的消息" target="_self">
+                        <i class="icon-mail"></i>
+                        <span style="display: none;">我的消息</span>
+                    </a>
+                </li>
+                <li class="set_btn user-card-box">
+                    <a id="header-avator" class="user-card-item" action-type="my_menu" href="http://www.imooc.com/u/2198636/courses" target="_self"><img src="./example_files/54584e2c00010a2c02200220-40-40.jpg" width="40" height="40">
+                        <i class="myspace_remind" style="display: none;"></i>
+                        <span style="display: none;">动态提醒</span>
+                    </a>
+                    <div class="g-user-card">
+                        <div class="card-inner">
+                            <div class="card-top">
+                                <a href="http://www.imooc.com/u/2198636/courses"><img src="./example_files/54584e2c00010a2c02200220-100-100.jpg" alt="大B卷土重来" class="l"></a>
+                                <a href="http://www.imooc.com/u/2198636/courses"><span class="name text-ellipsis">大B卷土重来</span></a>
+                                <p class="meta">
+					<a href="http://www.imooc.com/u/2198636/experience">经验<b id="js-user-mp">1694</b></a>
+					<a href="http://www.imooc.com/u/2198636/credit">积分<b id="js-user-credit">0</b></a>            </p>
+                    
+                                <a href="http://www.imooc.com/user/setprofile" class="icon-set setup"></a>
+                            </div>
+                            <!--
+                            <div class="card-links">
+                                <a href="/space/index" class="my-mooc l">我的慕课<i class="dot-update"></i></a>
+                                <span class="split l"></span>
+                                <a href="/myclub/myquestion/t/ques" class="my-sns l">我的社区</a>
+                            </div>
+                            -->
+                                                        <div class="card-history">
+                                <span class="history-item">
+                                    <span class="tit text-ellipsis">Java入门第一季</span>
+                                    <span class="media-name text-ellipsis">7-1 如何定义 Java 中的方法</span>
+                                    <i class="icon-clock"></i>
+                                                                            <a href="http://www.imooc.com/video/1577" class="continue">继续</a>
+                                                                    </span>
+                            </div>
+                                                        <div class="card-sets clearfix">
+                                <a href="http://www.imooc.com/wenda/save" target="_blank" class="l mr30">发问题</a>
+                                <a href="http://www.imooc.com/article/publish" target="_blank" class="l">写文章</a>
+                                <a href="http://www.imooc.com/passport/user/logout?referer=http://www.imooc.com" class="r">退出</a>
+                            </div>
+                        </div>
+                        <i class="card-arr"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+              
+  </div>
+</div>
+
+<div id="studyMain">
+
+ 
+<div id="bgarea" class="video-con">
+    <div class="js-box-wrap" style="width: 100%; height: 448px;">
+        <div id="J_Box" class="course-video-box">
+            <div class="jwplayer playlist-none jw-user-inactive" id="video-box" tabindex="0" style="opacity: 1; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"><div style="position: absolute; opacity: 0.4; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial; width: 220px; height: 30px; left: 20px; top: 60px; z-index: 9999; color: rgb(255, 255, 255); text-align: center; vertical-align: middle; visibility: hidden; background-color: rgb(0, 0, 0);">进度:49%(03:41/07:31)</div><div style="position: absolute; z-index: 997; left: 50%; top: 50%; visibility: hidden; margin-left: -60px; margin-top: -60px; width: 120px; height: 120px; opacity: -0.2;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA25pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0ZmE4ZmU1YS1lZmEyLWI0NGQtODNhYy1lYzE1NWI4MzNmYjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUM0QzIyOTY5MThEMTFFNThBQTNFOTdEMzE1NkM4NUYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUM0QzIyOTU5MThEMTFFNThBQTNFOTdEMzE1NkM4NUYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REQ0NEVCQzUyRjg3MTFFNUEwMTZDMDZBRjlEMDUzNzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REQ0NEVCQzYyRjg3MTFFNUEwMTZDMDZBRjlEMDUzNzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7YPjWwAAAAdElEQVR42uzasQ2AMAxFwW/ErOwEy5ouTRoEBUXu1Y6lk9tUkjMLtWWxgIGBgYGBgYGBgYHftX953N3Hk7mquv7Y58LAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAo4rftMDAwMDAwMDAwMDAwHO3AAMAfw4Jq71QhG8AAAAASUVORK5CYII=" style="width: 100%; height: 100%;"></div><div></div><div style="position: absolute; z-index: 999; left: 50%; top: 50%; visibility: hidden; margin-left: -60px; margin-top: -60px; width: 60px; height: 60px; opacity: 1;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA25pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0ZmE4ZmU1YS1lZmEyLWI0NGQtODNhYy1lYzE1NWI4MzNmYjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkNFNjM4NEI5MThEMTFFNTkzMDRCNzZDRjkwQ0Y5MTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkNFNjM4NEE5MThEMTFFNTkzMDRCNzZDRjkwQ0Y5MTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REQ0NEVCQzUyRjg3MTFFNUEwMTZDMDZBRjlEMDUzNzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REQ0NEVCQzYyRjg3MTFFNUEwMTZDMDZBRjlEMDUzNzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5ZitpPAAACsElEQVR42uyaS08aURSAUYpAZSXjtrW4gkKXPKZrKcENRvAH8AgJz2hi/BUSQiBQ/gIEwitRu6sBgYEVOAEW1K55rCCBTqK9N6lJt7UDXLn3rGYz9+bLmfudc25mQyAQfBVgFJsCzIIAE2ACTIAJMAEmwASYABNgFIFrtZpRo9HIsAHWarV7DMPYwuGwWiwWb2LxSQNQUTAYpFmWtRweHlLYnGGFQkHl83lLJpOh5XK5CAtpbYI4OjpS93o9m9/v38PG0js7O7JIJGKsVqtGtVq9jU1Z0ul0UGonoVBILRKJNrCowxKJRHR6ekp3Oh2L2Wym1h74L6ntFgoFSzqdNixTaiutlVBqx8fHGig1r9f7HpvWEkotGo1+ubu7O1CpVNtrD/wcer3+Q7PZtEGpCYXCjbUH/iO1LSi1brdrMZlM1NoDP8f+/v5uqVSypFIpPZ9SQ3o8hFKzWq2fQAmzeTyed9jMwxRFyWKxmKlSqRwolcq32FwAGAwGKLWTy8vLjy+V2qu78ZBKpVtnZ2efs9ksjQXwbDb7BcpWBUxhlZe8/+Y1wYLG5IfT6aywLDtd6zM8Go0mPp/vmqbpb/8Di3yGH0GAs3rvdrsbAJrjY01kgfv9/gAMFLdXV1dDPtdFDhhIiYvH48zFxcU9x3FPfK+PFHC1Wn1wuVzldrs9XdQeSEhrPB5P/H7/NWgsbhYJu/IMQynlcjkWZJXhS0rIAgMpDQOBwHcwEQ2Xue/SgefzOZdIJJjz8/OFSAkp4Hq9/uBwOMqLPqcrlxaQ0jQYDN7odLqbVcIuPMPASU9ASrBTYgaDASdAIBYGDKUEsnpbLBYHKNV63oGhlJLJZANKCTw/otbJ8QrcaDR+2u32cqvVmqDao8NrEvK/NAEmwASYABNgAkyACTABJsD/Hr8FGAASoQ9aN88ErAAAAABJRU5ErkJggg==" style="width: 100%; height: 100%;"></div><div style="position: absolute; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial; height: 30px; z-index: 9999; color: rgb(255, 255, 255); text-align: left; visibility: hidden; width: 1366px; background-color: rgb(51, 51, 51);">&nbsp;&nbsp;&nbsp;&nbsp;7-2 使用WebView显示网页（一）</div><div class="jwclick" id="video-box_menu" style="display: none;"><div class="jwclick_item">About imooc v2016-06-03...</div></div><div style="position: absolute; opacity: 0.9; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial; width: 80px; height: 280px; bottom: 53px; z-index: 991; color: rgb(120, 125, 130); visibility: hidden; left: 1126px; background: rgb(20, 25, 30);"><ul id="speedAjust" style="cursor:pointer" class="multi-speed"><li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px;">0.5x</span></li>        <li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px;">0.75x</span></li><li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px;">1.0x</span></li><li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px; background-color: transparent;">1.25x</span></li><li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px; background-color: transparent;">1.5x</span></li><li><i></i><span style="color: rgb(240, 20, 0); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px; background-color: transparent;">1.75x</span></li><li><i></i><span style="color: rgb(120, 125, 130); display: block; width: 80px; height: 40px; text-align: center; padding: 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(54, 60, 64); vertical-align: middle; line-height: 40px; background-color: transparent;">2.0x</span></li></ul></div><div id="setoverlay" style="position: absolute; z-index: 991; bottom: 48px; visibility: hidden;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAACMCAYAAACanNcLAAAK6klEQVR4nO3dT0xbVxbH8cuAZcuGGEyxFyGp0VhW1DSa8CebthRCwq4RmUiJBItIJTI7VMHsGw37tELdBTVILBopkQiI7EgTGJrZhJiM0lQV8shuJ5WK05q4gGULKLNw7sntqw2BmhbT72cT85793rOl+7vn3GdISbXv0PcKAJRSf/mjLwDA3kEgABAEAgBBIAAQBAIAQSAAEAQCAEEgABAEAgBBIAAQBAIAQSAAEAQCAEEgABBlhT5gIBiwn2w9WWndfm/q3vPIfCTT2dXp/eHZs4xSSk1O3kkqpVTH2Q7Pk6+erETmIxnzNZ1dnd7rn12PW4/V2FTvrK097BgfG090dnV6y8vLS3Jdiz6nPsfTp9+mH87OpfT+zc5rHjMcnl3yVFXb/HV1Dr1teXl5I9e1AcVsVyqEeDy+OnR1aGF5eXlD/2vun5y8k3ytpsYeCAbsSik1PjaeyBUiuXR2dXobGpoqvF6vLdQT8ulBOXR1aCEWjabD4dmlWDSajkWjaXOgj4+NJ2prDzvMYzmdzjJrGGhDV4cW9DH1tlg0mtbbX/3TAIpHSaH/QIquEOLx+KrT6SxTSqny8vISs0LINbMGggH70TeOusbHxhN6W6gn5Ms1+HSF8OSrJyubBUk8Hl9VSimv12uz7otFo2lzxlfq5axPhYA/q10JBD2w9eDv7Or0plKpNevAjMfjq2YAWG0VCOZrdSvyWk2NPZVKrZn7GpvqnZ6qaptuUXRoxaLR9OTknWSuMDK1t592K5WtbEI9IZ/ZigD7ScHXEJTKzsihnpBPqeygVkqpB7MPVsbHxjPWQa5n43zhEAgG7PkGn14XaGhoqhi6OrTQ3n7aPT//9bI+b75ZvO51v8NsBdwHKkpTKyvrSmUHv7Vy0EI9IYdSSp1sPVl5svUkVQL2nYIHQmQ+konMRxaU2nxRUC/uXf/selzP+NbnKJUdvNZACAaPlOsQaWhoqlDqZfCYg1mHg96uB7TZviillKeq2pZY/HFVKVnoTOrXhXpCvlg0mna6XKVKZdcifsPHA+xpBQ+ExqZ6px6kSr0cqPem7j13H6goXV5e3vBUVf+qp7eqrT3sCIdnl4LBI+Xm9o6zHZ4fnj3LpFKp0vGx8UR7+2l3YvHH1YezcynrY/0aT1W1TbcHHWc7PHp7KpVaCwQDdn9dncO842G2NmY109hU79TvRynWEbD/FDwQHs7OpfTsb60QOs52eObnv162DnItEAzYTzSdcF//7Hrc6/Xa9J0Bs20YHxtPNDbVO/WMrZRSDQ1NFTqE/HV1Dv1Yz/rWx9rTp9+m9VqC3ma9lRnqCfnC4dklfR79PMIA+1HBA8Hag+sZNRaNpvUg91RV29rbT7v1rKxUdt3B6/VWDl0dWug42+HRg/TJV09WTjSdcEfmI3kHXzg8u7RZhfBaTY09+k0srdQvbzVuVqnoysA8jq4ylMqG3fY/HWBvK3ggTE7eSXZ2ddpTqdTa06ffpmtrDzucTmeZv67OoWdavVofCAbSkflIxlNVbdOLirqk1wMvMh/J1L3uz3u7UqnNK4TGpnpnKpVa0yGgZ/6Osx0ep9NZNnR1aKGzq9NrDSizNdDVhbkOYf1uBbAfFPy2o175198TiMxHMrluEzY21TuDwSPl5iBvbz/tdrpcpbkW7vQ+pbLVhJ6tzarA+vzE4o+rweCR8gezD5JH3zjq8nq9Nv3dBKV+uUCog8i8XWoeR6lsRWFWCLQM2G8KHggAihe/3ARAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgARFmhDxgM/LXgxwSQ23zkv2uFPF5Jte/Q94U8IIDiRcsAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBA7NqfO/tbY4PH5XLatvu6lZXU6n8ehhO7cU0ANrdrgeByOW3//tcXC9t93VvvvuPb6TkHBi57lFLqww//ueNAaW1ptv/93Fn3Bx/8I55r/8jIsO/ixffzvq+RkWG5fvN55y+cc77z9tvl1uP29/W6K6s8pdZrHhi47PH7/dsK1Fgstvpb3rtpZGTYd+3Ta8+npmcySm39uWB/KOo/iHr+wjnnmffOVFi3m4NSm7g9sXTzxmhKKaUGB694q6o8Jeb+7Q6m1pZme/el7spc+yZuTywde/OYw9x288Zo6tibxxz9fb3ujz7+JKm3V1Z5Sp8vJtatx8h1Lfr9bhZIO5XrM+m+1F3Zfan7F88zP9tCBhD2hqIOBKWUWlxMbGw1aw0OXvGaP+9kljNn7JGRYd+juXB64vbEkh6g5y+ccx5785jj8ZeP07kqAaWUuvv53RU94yqVDRW/32+79vndle1eT6FZr5cK4c+p6AOhUKzVhjkTPpoLp/VMqFuG/r5et36++VwzNBYXExvJ5E9rZulvzrixWGz1xbZK6/Y/eua1ViFT0zOZqekZwmCfK/pAqKrylORqEbbr5o3R1M0boylrr6/XJaxelP1JpbKDX7cJfr/f9mgunDbbAv0cc5DplsMc/P19vW7j2HnpiqfQs/V2PkezesD+UfSBsN2WId+6g1LZ3v9Vztnf1+v+33ffrR46eNB2vL7BoVsGpbIza39fr1tXCPmure1Um+vRXDj9ut9v19sqqzylj798nN7q/LdGx5Jtp9pcOoj02oh+r9a1gK3o6zQDa7NwsrZg2D+KPhC2S1cC+Xri/r5edzL5k/xvOG73gTI9SM2BkK+9MB/fGh37VZWgH+sZdnDwire1pdk+NT2T8fv9truvsJ7wonzP6CrDrGh+jx5/u4GD4lH0gbDTlqHtVJvri/v3l63b8636Dwxc9nxx//7ymffOVOh2YXDwivfW6FhyanomoxcVdflvhkdrS7NdqZd9+cjIsE+X29/EYpm2U22uhobjjlgstrqdMvxFMCwMDFz2DAxc9vye6w60C/tT0QfCTu4ytLY0293uA2W51gzyrfrrwWZtN6wLgrnCqcZXU7q4mNjIdW0fffxJcmRk2Kf8ftu1T6893+x95PNHL0Bi/yj6QNiJtlNtrlujY8nWlma7HuB6hrfO0luVx7r036xCOHTwoO2bWExu35mvN38uhln3/IVzznzhhuJX9IGw3ZZB3/vvvtRdubiY2Lh48f0F80tGub7082zh2a9aCG2rCqG1pdl+vL7BYc7+ekDp7zZM3J5YOnTwoC3XIuFeYP3W5KsuvqL4FH0gbLdl0H23uX9qeibTfalb6UHb39frPl7f4NDHn5qeyehBYZ0d891+0+dsO9Xmmrg9sVTjqynVYfFoLpzW+y0BlBwZGfaZlcZesJeuBbtr1/47+Lfefce3099l2MnrAPx2u1YhrK+v/7yTX1RaX1//eTeuB8DWdq1CAFB8+AMpAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBAEAgABIEAQBAIAASBAEAQCAAEgQBA/B9Uq6PhMoStwAAAAABJRU5ErkJggg=="><input type="button" value="HTML5" style="width: 100px; height: 30px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial; position: absolute; margin-left: -240px; margin-top: 40px; border: 1px solid rgb(240, 20, 0); color: white; background: rgb(240, 20, 0);"><input id="flashBtn" type="button" value="FLASH" style="position: absolute; width: 100px; height: 30px; margin-left: -120px; margin-top: 40px; cursor: pointer; border: 1px solid rgb(77, 85, 89); color: rgb(181, 185, 188); background: rgb(20, 25, 30);"><div style="margin-left: 24px; margin-top: -40px; width: 20px; height: 20px; position: absolute; cursor: pointer; display: block; background: rgba(0, 0, 0, 0);"><img id="imgid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAAt0lEQVQYlY3QsU3DYBDF8d85KejiDRghHiH0SDBCikh8HYzABoSOSBRmAxcZwBtgRsgGbpGIvhSYYEBIuep0+r+ndy+cOhsP6CcnwU9uhXuU4dk5WNn9A18JDXoTVeFDa687Cn/Cc6EG2cLKrsAapb3GxmyUeTbAJZaSNygkj7IaFYPbp2ODSla78fJ1jpHj6yBay0phKWslF+OU09G+kHXC3WDTCde/3/qudevdpRZn6JGkv80dACOiLYjVNwICAAAAAElFTkSuQmCC" style="visibility: hidden;"></div></div><span class="jwmain" id="video-box_view"><span class="jwvideo" id="video-box_media" style="visibility: visible; opacity: 1;"><video x-webkit-airplay="allow" webkit-playsinline="" src="http://v2.mukewang.com/c28e50f3-7721-47c4-91ac-ba7b3f53b1bd/L.mp4?auth_key=1468849957-0-0-55acb95cefdb820bad5229c77ed74b92" style=""></video></span><span class="jwcontrols"><div id="video-box_caption" class="jwcaptions"><div style="display: none; height: auto; position: absolute; bottom: 20px; text-align: center; width: 100%; visibility: visible;"><div style="display: inline-block;"><span style="color: rgb(255, 255, 255); display: inline-block; font-family: Arial, sans-serif; font-style: normal; font-weight: normal; text-align: center; text-decoration: none; word-wrap: break-word; max-width: 0px; font-size: 0px; line-height: 0px; padding: 0px; background-color: rgb(0, 0, 0);"></span></div></div></div><div id="video-box_display" class="jwdisplay" style="display: block;"><div class="jwpreview jwuniform"></div><div class="jwdisplayIcon" id="video-box_display_button" style="opacity: 1; display: table; left: 0.5px; cursor: pointer; background-size: 0px 100%, 82px 100%, 0px 100%;"><div class="jwicon" id="video-box_display_button_play" style="transform: rotate(0deg);"></div><div class="jwtext" style="height: 0px;"></div></div></div><img class="jwlogo" id="video-box_logo" style="display: none; visibility: visible; opacity: 1;"><div class="jwdock" id="video-box_dock"><div class="jwdockbuttons"><div class="capLeft"></div><div class="capRight"></div></div></div><span id="video-box_controlbar" class="jwcontrolbar" style="height: 40px; bottom: 0px; left: 0px; right: 0px; max-width: 2800px; display: inline-block; opacity: 1;"><span class="jwbackground">&nbsp;</span><span class="jwgroup jwleft"><span class="jwplay"><span><button tabindex="-1" type="button"></button></span><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span></span><span id="video-box_controlbar_elapsed" class="jwtext jwelapsed jwhidden" style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC) 50% 50% / 1px 40px repeat-x;">05:17 / 07:31</span></span><span class="jwgroup jwcenter" style="left: 0px; right: 0px;"><span class="jwslider jwtime" style="display: block;"><span class="jwrail" style="height: 20px; bottom: 10px;"><span class="jwrailgroup Rail"><span class="jwtimeSliderRail">&nbsp;</span></span><span class="jwrailgroup Buffer" style="width: 100%; opacity: 1;"><span class="jwtimeSliderBuffer">&nbsp;</span></span><span class="jwprogressOverflow" style="width: 70.1949%; opacity: 1;"><span class="jwrailgroup Progress"><span class="jwtimeSliderProgress">&nbsp;</span></span></span><span class="jwtimeSliderThumb jwthumb" style="visibility: visible; margin-left: -8px; left: 70.1949%; opacity: 1;">&nbsp;</span><div class="jwoverlay" id="video-box_controlbar_timetooltip" style="padding: 1px 0px; left: 955px; opacity: 0; visibility: hidden; margin-left: -21px;"><div class="jwarrow" style="position: absolute; bottom: 0px; width: 0px; height: 0px; left: 50%; margin-left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopleft" style="width: 0px; height: 0px; top: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomleft" style="width: 0px; height: 0px; bottom: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopright" style="width: 0px; height: 0px; top: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomright" style="width: 0px; height: 0px; bottom: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwleft" style="width: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwright" style="width: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtop" style="height: 0px; top: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottom" style="height: 0px; bottom: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwback" style="left: 0px; right: 0px; top: 0px; bottom: 0px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAxNTM3REZFMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAxNTM3REZGMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE1MzdERkMyOTA4MTFFNUJGNEU5MDRCOThERThEMjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE1MzdERkQyOTA4MTFFNUJGNEU5MDRCOThERThEMjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lfqfLAAAAGElEQVR42mIUkZR7xoAEmBjQAGEBgAADAE4gATkKpl/3AAAAAElFTkSuQmCC) 50% 50% / 4px 4px;"></div><div class="jwcontents"><div><div id="video-box_controlbar_thumb" style="display: none;"></div><div class="jwoverlaytext">05:19</div></div></div></div></span></span><span id="video-box_controlbar_alt" class="jwtext jwalt" style="display: none; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC) 50% 50% / 1px 40px repeat-x;"></span></span><span class="jwgroup jwright" style="right: 0px;"><span id="video-box_controlbar_duration" class="jwtext jwduration jwhidden" style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC) 50% 50% / 1px 40px repeat-x;"></span><span class="jwcc" style="display: none;"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button tabindex="-1" type="button"></button></span><div class="jwoverlay" id="video-box_controlbar_cc_overlay" style="padding: 1px 0px; left: 75%; bottom: 55px; opacity: 0; visibility: hidden;"><div class="jwarrow" style="position: absolute; bottom: 0px; width: 0px; height: 0px; left: 50%; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopleft" style="width: 0px; height: 0px; top: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomleft" style="width: 0px; height: 0px; bottom: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopright" style="width: 0px; height: 0px; top: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomright" style="width: 0px; height: 0px; bottom: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwleft" style="width: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwright" style="width: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtop" style="height: 0px; top: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottom" style="height: 0px; bottom: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwback" style="left: 0px; right: 0px; top: 0px; bottom: 0px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAxNTM3REZFMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAxNTM3REZGMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE1MzdERkMyOTA4MTFFNUJGNEU5MDRCOThERThEMjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE1MzdERkQyOTA4MTFFNUJGNEU5MDRCOThERThEMjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lfqfLAAAAGElEQVR42mIUkZR7xoAEmBjQAGEBgAADAE4gATkKpl/3AAAAAElFTkSuQmCC) 50% 50% / 4px 4px;"></div><div class="jwcontents"><div class="jwmenu" id="video-box_controlbar_cc"></div></div></div></span><span class="jwmute"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button tabindex="-1" type="button"></button></span><div class="jwoverlay" id="video-box_controlbar_volumeoverlay" style="padding: 1px 0px; left: 75%; bottom: 55px; display: block; opacity: 0; visibility: hidden; margin-left: -15px;"><div class="jwarrow" style="position: absolute; bottom: 0px; width: 0px; height: 0px; left: 50%; margin-left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopleft" style="width: 0px; height: 0px; top: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomleft" style="width: 0px; height: 0px; bottom: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopright" style="width: 0px; height: 0px; top: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomright" style="width: 0px; height: 0px; bottom: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwleft" style="width: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwright" style="width: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtop" style="height: 0px; top: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottom" style="height: 0px; bottom: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwback" style="left: 0px; right: 0px; top: 0px; bottom: 0px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAxNTM3REZFMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAxNTM3REZGMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE1MzdERkMyOTA4MTFFNUJGNEU5MDRCOThERThEMjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE1MzdERkQyOTA4MTFFNUJGNEU5MDRCOThERThEMjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lfqfLAAAAGElEQVR42mIUkZR7xoAEmBjQAGEBgAADAE4gATkKpl/3AAAAAElFTkSuQmCC) 50% 50% / 4px 4px;"></div><div class="jwcontents"><span class="jwslider jwvolume jwvertical"><span class="jwvolumeCapTop">&nbsp;</span><span class="jwrail"><span class="jwrailgroup Rail"><span class="jwvolumeRailCapTop">&nbsp;</span><span class="jwvolumeRail">&nbsp;</span><span class="jwvolumeRailCapBottom jwcapBottom">&nbsp;</span></span><span class="jwrailgroup Progress" style="height: 90%; bottom: 0px;"><span class="jwvolumeProgressCapTop">&nbsp;</span><span class="jwvolumeProgress">&nbsp;</span><span class="jwvolumeProgressCapBottom jwcapBottom">&nbsp;</span><span class="jwvolumeThumb jwthumb" style="top: 0px;">&nbsp;</span></span></span><span class="jwvolumeCapBottom jwcapBottom">&nbsp;</span></span></div></div></span><span class="jwslider jwvolumeH jwhorizontal" style="display: none;"><span class="jwvolumeHCapLeft">&nbsp;</span><span class="jwrail"><span class="jwrailgroup Rail"><span class="jwvolumeHRailCapLeft">&nbsp;</span><span class="jwvolumeHRail">&nbsp;</span><span class="jwvolumeHRailCapRight jwcapRight">&nbsp;</span></span><span class="jwprogressOverflow" style="width: 90%; opacity: 1;"><span class="jwrailgroup Progress"><span class="jwvolumeHProgressCapLeft">&nbsp;</span><span class="jwvolumeHProgress">&nbsp;</span><span class="jwvolumeHProgressCapRight jwcapRight">&nbsp;</span></span></span></span><span class="jwvolumeHCapRight">&nbsp;</span></span><span class="jwspeed"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button id="speedTxt" tabindex="-1" type="button" style="color: rgb(120, 125, 130); padding: 0px; width: 42px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial;">1.75 X</button></span></span><span class="jwhd"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button id="hdTxt" tabindex="-1" type="button" class="" style="color: rgb(120, 125, 130); padding: 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &#39;Microsoft YaHei&#39;, SimSun, Arial;">自动</button></span><div class="jwoverlay" id="video-box_controlbar_hd_overlay" style="padding: 1px 0px; left: 75%; bottom: 55px; opacity: 0; visibility: hidden;"><div class="jwarrow" style="position: absolute; bottom: 0px; width: 0px; height: 0px; left: 50%; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopleft" style="width: 0px; height: 0px; top: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomleft" style="width: 0px; height: 0px; bottom: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtopright" style="width: 0px; height: 0px; top: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottomright" style="width: 0px; height: 0px; bottom: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwleft" style="width: 0px; left: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwright" style="width: 0px; right: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwtop" style="height: 0px; top: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwborder jwbottom" style="height: 0px; bottom: 0px; background: url(http://www.imooc.com/video/2270) 50% 50% / 0px 0px;"></div><div class="jwback" style="left: 0px; right: 0px; top: 0px; bottom: 0px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAxNTM3REZFMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAxNTM3REZGMjkwODExRTVCRjRFOTA0Qjk4REU4RDI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE1MzdERkMyOTA4MTFFNUJGNEU5MDRCOThERThEMjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE1MzdERkQyOTA4MTFFNUJGNEU5MDRCOThERThEMjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5lfqfLAAAAGElEQVR42mIUkZR7xoAEmBjQAGEBgAADAE4gATkKpl/3AAAAAElFTkSuQmCC) 50% 50% / 4px 4px;"></div><div class="jwcontents"><div class="jwmenu" id="video-box_controlbar_hd"><div class="jwoption active" id="video-box_controlbar_hd_option_0">自动</div><div class="jwoption" id="video-box_controlbar_hd_option_1">普清</div><div class="jwoption" id="video-box_controlbar_hd_option_2">超清</div></div></div></div></span><span class="jwcast jwtoggle"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button tabindex="-1" type="button"></button></span></span><span class="jwset"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button tabindex="-1" type="button"></button></span></span><span class="jwfullscreen"><span class="jwblankDivider" style="margin-right: 17px; margin-left: 17px;"></span><span><button tabindex="-1" type="button"></button></span></span></span></span></span><span class="jwinstream"></span></span><span class="jwaspect"></span><span class="jwplaylistcontainer"></span></div>
+            <div class="next-box J_next-box hide">
+                <div class="next-box-inner">
+                                            <div class="course-tip-layer J-next-course" data-next-src="/video/2271">
+                            <h2>下一节课程： 使用WebView显示网页（二）
+                                <span class="course-duration"> (09:04)</span>
+                            </h2>
+                            <div class="J-next-auto hide next-auto"><em>3</em> 秒后播放下一节</div>
+                            <div class="J-next-btn hide btn btn-red">下一节</div>
+                            <a href="http://www.imooc.com/video/2270/0" class="review-course">重新观看</a>
+                            
+                                                    </div>
+
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <!--此处结构为练习题，视频，编程公用的侧栏-->
+<div class="section-list">
+    <div class="operator">
+        <div class="op chapter"><em class="icon-menu"></em>章节</div>
+        <div class="op notes"><em class="icon-note"></em>笔记</div>
+        <div class="op question"><em class="icon-addques"></em>提问</div>
+        <div class="op wiki"><em class="icon-wiki"></em>WIKI</div>
+    </div>
+    <div class="nano has-scrollbar">
+        <div class="nano-content" tabindex="0" style="right: -17px;">
+            <h3>Android攻城狮的第二门课（第1季...</h3>
+                        <ul>
+                <li class="sec-title">
+                    <span>第1章 解读AndroidManifest配置文件...</span>
+                </li>
+                                                        <li data-id="1565">
+                                                <a href="http://www.imooc.com/video/1565"><em class="icon-video"></em>1-1 AndroidManifest概述(01:36)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1566">
+                                                <a href="http://www.imooc.com/video/1566"><em class="icon-video"></em>1-2 全局信息配置(01:50)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1567">
+                                                <a href="http://www.imooc.com/video/1567"><em class="icon-video"></em>1-3 在配置文件中注册组件...(12:28)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1568">
+                                                <a href="http://www.imooc.com/video/1568"><em class="icon-video"></em>1-4 权限配置(04:02)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1569">
+                                                <a href="http://www.imooc.com/video/1569"><em class="icon-video"></em>1-5 自定义权限(05:41)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1570">
+                                                <a href="http://www.imooc.com/video/1570"><em class="icon-video"></em>1-6 总结(01:18)</a>                        
+                                                                        <i class="">                                                        <em class="icon-half"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第2章 使用ListView显示信息列表...</span>
+                </li>
+                                                        <li data-id="1616">
+                                                <a href="http://www.imooc.com/video/1616"><em class="icon-video"></em>2-1 课程目标(02:02)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1617">
+                                                <a href="http://www.imooc.com/video/1617"><em class="icon-video"></em>2-2 ListView解析(00:45)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1618">
+                                                <a href="http://www.imooc.com/video/1618"><em class="icon-video"></em>2-3 解读适配器(01:59)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1619">
+                                                <a href="http://www.imooc.com/video/1619"><em class="icon-video"></em>2-4 典型应用案例(00:56)</a>                        
+                                                                        <i class="">                                                        <em class="icon-half"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1620">
+                                                <a href="http://www.imooc.com/video/1620"><em class="icon-video"></em>2-5 使用ArrayAdapter(07:34)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1621">
+                                                <a href="http://www.imooc.com/video/1621"><em class="icon-video"></em>2-6 使用SimpleAdapter(13:39)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1622">
+                                                <a href="http://www.imooc.com/video/1622"><em class="icon-video"></em>2-7 监听ListView列表项点击事...(05:36)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1623">
+                                                <a href="http://www.imooc.com/video/1623"><em class="icon-video"></em>2-8 监听ListView滚动事件...(07:09)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1624">
+                                                <a href="http://www.imooc.com/video/1624"><em class="icon-video"></em>2-9 总结(01:00)</a>                        
+                                                                        <i class="">                                                        <em class="icon-half"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第3章 使用DatePicker以及TimePicker显...</span>
+                </li>
+                                                        <li data-id="1713">
+                                                <a href="http://www.imooc.com/video/1713"><em class="icon-video"></em>3-1 应用场景介绍(02:56)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1714">
+                                                <a href="http://www.imooc.com/video/1714"><em class="icon-video"></em>3-2 课程内容概述(02:17)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1715">
+                                                <a href="http://www.imooc.com/video/1715"><em class="icon-video"></em>3-3 案例需求描述(01:54)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1716">
+                                                <a href="http://www.imooc.com/video/1716"><em class="icon-video"></em>3-4 使用DatePicker实现日历选...(12:27)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1717">
+                                                <a href="http://www.imooc.com/video/1717"><em class="icon-video"></em>3-5 使用TimePicker实现时间选...(01:46)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1718">
+                                                <a href="http://www.imooc.com/video/1718"><em class="icon-video"></em>3-6 使用DatePickerDialog实现...(02:39)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1719">
+                                                <a href="http://www.imooc.com/video/1719"><em class="icon-video"></em>3-7 使用TimePickerDialog实现...(02:17)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1720">
+                                                <a href="http://www.imooc.com/video/1720"><em class="icon-video"></em>3-8 总结(01:07)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第4章 使用GridView以表格形式显示多张...</span>
+                </li>
+                                                        <li data-id="1812">
+                                                <a href="http://www.imooc.com/video/1812"><em class="icon-video"></em>4-1 GridView概述(03:59)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1814">
+                                                <a href="http://www.imooc.com/video/1814"><em class="icon-video"></em>4-2 使用GridView(12:49)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1815">
+                                                <a href="http://www.imooc.com/video/1815"><em class="icon-video"></em>4-3 设置属性(04:20)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1816">
+                                                <a href="http://www.imooc.com/video/1816"><em class="icon-video"></em>4-4 监听事件(03:38)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第5章 使用Spinner实现下拉列表...</span>
+                </li>
+                                                        <li data-id="1956">
+                                                <a href="http://www.imooc.com/video/1956"><em class="icon-video"></em>5-1 课程目标(03:18)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="1957">
+                                                <a href="http://www.imooc.com/video/1957"><em class="icon-video"></em>5-2 实现下拉列表(15:20)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第6章 使用ProgressBar实现进度条...</span>
+                </li>
+                                                        <li data-id="2154">
+                                                <a href="http://www.imooc.com/video/2154"><em class="icon-video"></em>6-1 ProgressBar简介(03:19)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2155">
+                                                <a href="http://www.imooc.com/video/2155"><em class="icon-video"></em>6-2 设置ProgressBar显示风格...(02:52)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2156">
+                                                <a href="http://www.imooc.com/video/2156"><em class="icon-video"></em>6-3 标题栏中的ProgressBar...(05:15)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2157">
+                                                <a href="http://www.imooc.com/video/2157"><em class="icon-video"></em>6-4 关键属性和方法(02:46)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2158">
+                                                <a href="http://www.imooc.com/video/2158"><em class="icon-video"></em>6-5 使用ProgressBar实现进度...(19:49)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2159">
+                                                <a href="http://www.imooc.com/video/2159"><em class="icon-video"></em>6-6 对话框形式的进度条...(12:06)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2160">
+                                                <a href="http://www.imooc.com/video/2160"><em class="icon-video"></em>6-7 自定义进度条样式(03:21)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第7章 使用WebView显示网页</span>
+                </li>
+                                                        <li data-id="2269">
+                                                <a href="http://www.imooc.com/video/2269"><em class="icon-video"></em>7-1 WebView概述(04:13)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2270">
+                                                <a href="./example_files/example.html"><em class="icon-video"></em>7-2 使用WebView显示...(07:31)</a>
+                                                                        <i class="">正在学                                                        <em class="icon-clock"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2271">
+                                                <a href="http://www.imooc.com/video/2271"><em class="icon-video"></em>7-3 使用WebView显示网页（二...(09:04)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2272">
+                                                <a href="http://www.imooc.com/video/2272"><em class="icon-video"></em>7-4 使用WebView显示网页（三...(06:15)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2273">
+                                                <a href="http://www.imooc.com/video/2273"><em class="icon-video"></em>7-5 使用WebView显示网页（四...(12:12)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第8章 Fragment基础概述</span>
+                </li>
+                                                        <li data-id="2416">
+                                                <a href="http://www.imooc.com/video/2416"><em class="icon-video"></em>8-1 Fragment的设计哲学(04:33)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2417">
+                                                <a href="http://www.imooc.com/video/2417"><em class="icon-video"></em>8-2 静态加载Fragment（一）...(09:39)</a>                        
+                                                                        <i class="">                                                        <em class="icon-full"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2418">
+                                                <a href="http://www.imooc.com/video/2418"><em class="icon-video"></em>8-3 静态加载Fragment（二）...(06:46)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2419">
+                                                <a href="http://www.imooc.com/video/2419"><em class="icon-video"></em>8-4 动态加载Fragment(07:41)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第9章 Fragment与Activity通信</span>
+                </li>
+                                                        <li data-id="2501">
+                                                <a href="http://www.imooc.com/video/2501"><em class="icon-video"></em>9-1 Fragment的生命周期（一）...(06:55)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2502">
+                                                <a href="http://www.imooc.com/video/2502"><em class="icon-video"></em>9-2 Fragment的生命周期（二）...(08:43)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2503">
+                                                <a href="http://www.imooc.com/video/2503"><em class="icon-video"></em>9-3 Activity向Fragment传递数...(13:14)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2504">
+                                                <a href="http://www.imooc.com/video/2504"><em class="icon-video"></em>9-4 Fragment向Activity传递数...(11:48)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第10章 使用ViewPager实现导航</span>
+                </li>
+                                                        <li data-id="2574">
+                                                <a href="http://www.imooc.com/video/2574"><em class="icon-video"></em>10-1 认识ViewPager(04:03)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2578">
+                                                <a href="http://www.imooc.com/video/2578"><em class="icon-video"></em>10-2 适配器PagerAdapter(12:31)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2579">
+                                                <a href="http://www.imooc.com/video/2579"><em class="icon-video"></em>10-3 PagerTabStrip和PagerTitl...(09:10)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2580">
+                                                <a href="http://www.imooc.com/video/2580"><em class="icon-video"></em>10-4 适配器FragmentPagerAdapt...(13:33)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2581">
+                                                <a href="http://www.imooc.com/video/2581"><em class="icon-video"></em>10-5 监听器的使用(02:59)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第11章 使用ViewFlipper实现屏幕切换动...</span>
+                </li>
+                                                        <li data-id="2656">
+                                                <a href="http://www.imooc.com/video/2656"><em class="icon-video"></em>11-1 使用ViewFlipper实现的图...(11:59)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2657">
+                                                <a href="http://www.imooc.com/video/2657"><em class="icon-video"></em>11-2 （知识扩展）支持手势滑动...(08:04)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第12章 使用ScrollView实现滚动效果...</span>
+                </li>
+                                                        <li data-id="2782">
+                                                <a href="http://www.imooc.com/video/2782"><em class="icon-video"></em>12-1 使用ScrollView实现滚动效...(07:09)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2783">
+                                                <a href="http://www.imooc.com/video/2783"><em class="icon-video"></em>12-2 监听ScrollView何时滑动到...(13:46)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2784">
+                                                <a href="http://www.imooc.com/video/2784"><em class="icon-video"></em>12-3 控制ScrollView视图位置...(08:34)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第13章 使用Gallery和ImageSwitcher制作...</span>
+                </li>
+                                                        <li data-id="2884">
+                                                <a href="http://www.imooc.com/video/2884"><em class="icon-video"></em>13-1 使用Gallery制作图片浏览...(14:19)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="2885">
+                                                <a href="http://www.imooc.com/video/2885"><em class="icon-video"></em>13-2 Gallery的无限循环(12:11)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第14章 使用SeekBar制作可拖动的进度条...</span>
+                </li>
+                                                        <li data-id="3033">
+                                                <a href="http://www.imooc.com/video/3033"><em class="icon-video"></em>14-1 使用SeekBar制作可拖动的...(08:28)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="3035">
+                                                <a href="http://www.imooc.com/video/3035"><em class="icon-video"></em>14-2 自定义SeekBar进度条...(06:35)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+                        <ul>
+                <li class="sec-title">
+                    <span>第15章 Android布局优化（大结局）...</span>
+                </li>
+                                                        <li data-id="3228">
+                                                <a href="http://www.imooc.com/video/3228"><em class="icon-video"></em>15-1 推荐使用布局(05:08)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="3229">
+                                                <a href="http://www.imooc.com/video/3229"><em class="icon-video"></em>15-2 布局优化之include(12:49)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="3230">
+                                                <a href="http://www.imooc.com/video/3230"><em class="icon-video"></em>15-3 布局优化之merge(06:35)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                                            <li data-id="3231">
+                                                <a href="http://www.imooc.com/video/3231"><em class="icon-video"></em>15-4 布局优化之ViewStub(06:27)</a>                        
+                                                                        <i class="">                                                        <em class="icon-nolearn"></em>
+                                                    </i>
+                                            </li>
+                                                </ul>
+            
+        </div>
+    <div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 98px; transform: translate(0px, 309.629px);"></div></div></div>
+</div></div>
+
+<div class="maybe-wenda" id="maybe-wenda" style="display: none;">
+    <i class="icon-chat"></i>
+    <p class="text">你发的评论可能会是问题？<br>是否将他发到问答中</p>
+    <input class="btn ok" type="button" value="好的" id="wenda-ok">
+    <input class="btn no" type="button" value="不用" id="wenda-no">
+</div>
+</div>
+
+<div class="course-subcontainer clearfix">
+  <div class="course-left">
+      <ul class="course-menu course-video-menu clearfix js-course-menu" data-ower="all" data-sort="last" style="position: absolute; left: 0px;">
+    <li class="course-menu-item"><a class="" href="javascript:void(0)" id="plMenu">评论</a></li>
+    <li class="course-menu-item"><a href="javascript:void(0)" id="qaMenu" class="active">问答</a></li>
+    <li class="course-menu-item"><a href="javascript:void(0)" id="noteMenu">笔记</a></li>
+    <!--
+    <li class="course-menu-item"><a href="javascript:void(0)" id="wikiMenu">WIKI</a></li>
+    -->
+        </ul>
+<div id="disArea" class="lists-container list-wrap">
+    <div id="pl-content" class="list-tab-con" style="display: none;">
+        <div class="publish clearfix" id="discus-publish">
+            <div class="publish-wrap publish-wrap-pl">
+               <div class="pl-input-wrap">
+                   <div id="js-pl-input-fake" class="pl-input-inner">
+                       <textarea id="js-pl-textarea" class="js-placeholder" placeholder="扯淡、吐槽、表扬、鼓励……想说啥就说啥！"></textarea>
+                       <span class="num-limit"><span id="js-pl-limit">0</span>/300</span>
+                   </div>
+                   <div class="pl-input-btm input-btm clearfix">
+                        <div class="verify-code l"></div>
+                        <input type="button" id="js-pl-submit" class="r course-btn" value="发表评论">
+                   </div>
+               </div>
+
+            </div>
+        </div>
+        <div id="plLoadListData"><div class="pl-container"> <ul>   <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/2907098/courses" target="_blank"><img width="40" height="40" src="./example_files/545862800001e2d802200220-40-40.jpg" title="LEOAND"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/2907098/courses" target="_blank">LEOAND</a> </div> <div class="pl-list-content">Android Studio中 assets目录应该建在和java、res同一层，都在main下面。</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-03-14</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="181987"><i class="icon-thumb"></i>  <span>3</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/275658/courses" target="_blank"><img width="40" height="40" src="./example_files/576b337c0001e45905890622-40-40.jpg" title="小宇轩"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/275658/courses" target="_blank">小宇轩</a> </div> <div class="pl-list-content">那个assets下面的那个example.html是怎么加的啊？</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2015-05-01</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="44464"><i class="icon-thumb"></i>  <span>2</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/222930/courses" target="_blank"><img width="40" height="40" src="./example_files/53ba24f50001778b01000100-40-40.jpg" title="过煌"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/222930/courses" target="_blank">过煌</a> </div> <div class="pl-list-content">无法登陆网站后台！</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-05-24</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="223098"><i class="icon-thumb"></i>  <span>1</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/3213527/courses" target="_blank"><img width="40" height="40" src="./example_files/545866c40001561502200220-40-40.jpg" title="行路"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/3213527/courses" target="_blank">行路</a> </div> <div class="pl-list-content">Intent是跳转页面容易理解。WebView加载一个页面也会自动跳转页面？怎么让网页在当前页面显示呢？</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-06-16</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="234427"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/1960125/courses" target="_blank"><img width="40" height="40" src="./example_files/5700fbb70001480008001130-40-40.jpg" title="亚洲神鹿"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/1960125/courses" target="_blank">亚洲神鹿</a> </div> <div class="pl-list-content">基础打不好是做不好项目的，脚踏实地学习才是关键！</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-04-21</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="205511"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/2317710/courses" target="_blank"><img width="40" height="40" src="./example_files/55e96b890001fd5401000100-40-40.jpg" title="旺仔eee"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/2317710/courses" target="_blank">旺仔eee</a> </div> <div class="pl-list-content">现在的人们都太浮躁了，还是得一步一步脚踏实地的学才行啊，加油！</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-03-10</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="179691"><i class="icon-thumb"></i>  <span>1</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/2714711/courses" target="_blank"><img width="40" height="40" src="./example_files/533e51f30001edf702000200-40-40.jpg" title="qq_哎呦不错O_0"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/2714711/courses" target="_blank">qq_哎呦不错O_0</a> </div> <div class="pl-list-content">能否讲一些项目用的  讲的都是比较不常用的</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-03-09</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="178948"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/1259539/courses" target="_blank"><img width="40" height="40" src="./example_files/54e9bcba0001f22903200240-40-40.jpg" title="9gm"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/1259539/courses" target="_blank">9gm</a> </div> <div class="pl-list-content">我不相信下面的人能够听得懂，关顾着跟着敲代码是没用的。</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-02-02</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="165132"><i class="icon-thumb"></i>  <span>1</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/335833/courses" target="_blank"><img width="40" height="40" src="./example_files/54217f3600013e9e02790279-40-40.jpg" title="yuzhewo"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/335833/courses" target="_blank">yuzhewo</a> </div> <div class="pl-list-content">as assets目录应该建在哪一层啊?</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2016-01-18</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="158583"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/1991700/courses" target="_blank"><img width="40" height="40" src="./example_files/5458471300017f3702200220-40-40.jpg" title="我的命运"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/1991700/courses" target="_blank">我的命运</a> </div> <div class="pl-list-content">给力！正是我需要的知识</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2015-08-07</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="95212"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/1966573/courses" target="_blank"><img width="40" height="40" src="./example_files/555750b60001f45401000100-40-40.jpg" title="妖魔鬼怪"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/1966573/courses" target="_blank">妖魔鬼怪</a> </div> <div class="pl-list-content">敢问这个授课源代码怎么用</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2015-06-13</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="59564"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/347146/courses" target="_blank"><img width="40" height="40" src="./example_files/54276c0f0001722101000079-40-40.jpg" title="jinwanli12"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/347146/courses" target="_blank">jinwanli12</a> </div> <div class="pl-list-content">webView.loadUrl("http://www.baidu.com");</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2015-01-27</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="18892"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/347146/courses" target="_blank"><img width="40" height="40" src="./example_files/54276c0f0001722101000079-40-40.jpg" title="jinwanli12"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/347146/courses" target="_blank">jinwanli12</a> </div> <div class="pl-list-content">webView.loadUrl();<br>
+webView.loadUrl("file:///android_asset/xx.html);<br>
+uses-permission android:name="android.permission.)'<br>
+&lt;webView width;<br>
+height;<br>
+id;<br>
+private WebView webView;<br>
+init(){<br>
+webView=findViewById;<br>
+webView.loadUri("file:///android_asset/example.html");</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2015-01-27</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="18891"><i class="icon-thumb"></i>  <span>0</span></a> </div> </div> </li>  <li class="pl-list clearfix"> <div class="pl-list-avator"> <a href="http://www.imooc.com/u/109377/courses" target="_blank"><img width="40" height="40" src="./example_files/53480d000001c55b01000100-40-40.jpg" title="张小毅"></a> </div> <div class="pl-list-main"> <div class="pl-list-nick"> <a href="http://www.imooc.com/u/109377/courses" target="_blank">张小毅</a> </div> <div class="pl-list-content">???</div>  <div class="pl-list-btm clearfix"> <span class="pl-list-time l">时间: 2014-11-26</span>  <a title="赞" href="javascript:;" class="js-pl-praise list-praise r" data-id="4060"><i class="icon-thumb"></i>  <span>1</span></a> </div> </div> </li> </ul></div><div class="page pl-list-page"></div></div>
+    </div>
+    <div id="qa-content" class="list-tab-con" style="">
+        <div id="qaLoadListData"><div class="sortlist"> 			<div class="ordertab"> 				<a href="javascript:void(0)" hidefocus="true" data-order="1" class="quealltab onactive">全部</a>				<a href="javascript:void(0)" hidefocus="true" data-order="2" class="quealltab ">精华</a>			</div>		</div><div class="answertabcon"></div><div class="page discuss-list-page"></div></div>
+    </div>
+    <div id="note-content" class="list-tab-con" style="display:none">
+        <div id="noteLoadListData">
+        <div class="course-tool-bar clearfix js-select-state">			<div class="tool-left l js-all-state">		        <a href="javascript:;" class="sort-item active" data-sort="last">最新</a>		        <a href="javascript:;" class="sort-item" data-sort="sugg">点赞</a>		        <a href="javascript:;" class="sort-item" data-sort="coll">采集</a>	        </div>	        <div class="tool-right r">		        <span class="tool-item">		        	<a href="javascript:;" class="js-ower hide-learned tool-chk" data-sort="last">只看我的</a>		        </span>		    </div>		</div><div id="course_note" class="course_note"></div><div class="page note-list-page"></div></div>
+    </div>
+    <div id="wiki-content" class="list-tab-con" style="display:none;">
+        <div id="wikiLoadListData">
+        <div id="course_wiki" class="course_wiki"></div><div class="page wiki-list-page"></div></div>
+    </div>
+    <div id="mate-content" class="list-tab-con" style="display:none;">
+        <div id="mateLoadListData">
+        <div class="othterscode-container"></div><div class="page othterscode-list-page"></div></div>
+    </div>
+
+</div>
+  </div>
+  <div class="course-right clearfix">
+           <div class="coursedownload fl">
+        <h3>资料下载</h3>
+        <ul class="downlist">
+                        <li>
+              <span><i class="icon icon-folder"></i>WebView授课源代码</span>
+              <a href="http://img.mukewang.com/down/53abd5860001922200000000.zip" class="downcode" target="_blank" download="" data-id="123" title="WebView授课源代码">下载</a>
+            </li>
+                    </ul>
+    </div>
+
+      
+<div class="cp-other-learned  js-comp-tabs">
+  <div class="cp-header clearfix">
+    <h2 class="cp-tit l">该课的同学还学过</h2>
+    <ul class="cp-tabs r">
+
+            <li class="l">
+        <a href="javascript:;" class="on js-comp-tab-item" data-pannel="course">课程</a>
+      </li>
+      <li class="l end"><a href="javascript:;" class="js-comp-tab-item" data-pannel="plan">路径</a></li>
+          </ul>
+  </div>
+  <div class="cp-body">
+    <div class="cp-tab-pannel js-comp-tab-pannel" data-pannel="course" style="display: block">
+    <!-- img 200 x 112 -->
+      <ul class="other-list">
+                <li class="curr">
+          <a href="http://www.imooc.com/view/179?src=sug" target="_blank">
+            <img src="./example_files/57075cbc00012aaf06000338-240-135.jpg" alt="Android攻城狮的第二门课（第3季）">
+            <span class="name autowrap">Android攻城狮的第二门课（第3季）</span>
+          </a>
+        </li>
+                <li>
+          <a href="http://www.imooc.com/view/142?src=sug" target="_blank">
+            <img src="./example_files/57075c950001df0306000338-240-135.jpg" alt="Android攻城狮的第二门课（第2季）">
+            <span class="name autowrap">Android攻城狮的第二门课（第2季）</span>
+          </a>
+        </li>
+                <li>
+          <a href="http://www.imooc.com/view/124?src=sug" target="_blank">
+            <img src="./example_files/570360620001390f06000338-240-135.jpg" alt="Java入门第二季">
+            <span class="name autowrap">Java入门第二季</span>
+          </a>
+        </li>
+                <li>
+          <a href="http://www.imooc.com/view/206?src=sug" target="_blank">
+            <img src="./example_files/576b7c8b0001468206000338-240-135.jpg" alt="与Android Studio的第一次亲密接触">
+            <span class="name autowrap">与Android Studio的第一次亲密接触</span>
+          </a>
+        </li>
+                <li>
+          <a href="http://www.imooc.com/view/110?src=sug" target="_blank">
+            <img src="./example_files/5703604a0001694406000338-240-135.jpg" alt="Java入门第三季">
+            <span class="name autowrap">Java入门第三季</span>
+          </a>
+        </li>
+              </ul>
+    </div>
+        <div class="cp-tab-pannel js-comp-tab-pannel" data-pannel="plan">
+      <ul class="other-list">
+                <li class="curr">
+          <a href="http://www.imooc.com/course/programdetail/pid/33?src=sug" target="_blank">
+            <img src="./example_files/56551e450001afcd09600720-240-135.jpg" alt="Android工程师">
+            <span class="name autowrap">Android工程师</span>
+          </a>
+        </li>
+              </ul>
+    </div>
+      </div>
+</div>
+  <div class="wendalist js-right-wenda" style="display: block;">
+    <div class="course-right-title">
+        <h3>猿问推荐</h3>
+        <a href="http://www.imooc.com/wenda/?block_id=tuijian_yw" target="_blank" class="more">更多</a> 
+    </div>
+
+      <ul><li><a href="http://www.imooc.com/wenda/detail/323020?block_id=tuijian_yw" target="_blank">安卓开发工具安装不了。</a><i>6 回答</i></li><li><a href="http://www.imooc.com/wenda/detail/323077?block_id=tuijian_yw" target="_blank">慕课网现在不能下载源码么？</a><i>1 回答</i></li><li><a href="http://www.imooc.com/wenda/detail/323073?block_id=tuijian_yw" target="_blank">android studio中MainActivity的R不能调用Layout</a><i>1 回答</i></li><li><a href="http://www.imooc.com/wenda/detail/322979?block_id=tuijian_yw" target="_blank">求老师来帮我看看代码 能运行但是点击开关的时候...</a><i>5 回答</i></li><li><a href="http://www.imooc.com/wenda/detail/323064?block_id=tuijian_yw" target="_blank">android studio上面的图片放在drawable和mipmap里...</a><i>1 回答</i></li></ul>
+  </div>
+  <div class="articlelist js-right-article" style="display: block;">
+    <div class="course-right-title">
+        <h3>手记推荐</h3>
+        <a href="http://www.imooc.com/article/?block_id=tuijian_wz" target="_blank" class="more">更多</a> 
+    </div>
+    <div class="course-right-content">
+      
+    </div>
+    <ul><li><a href="http://www.imooc.com/article/10611?block_id=tuijian_wz" target="_blank">imageview中的src和background的区别及妙用</a></li><li><a href="http://www.imooc.com/article/10599?block_id=tuijian_wz" target="_blank">Android项目五子棋笔记</a></li><li><a href="http://www.imooc.com/article/10593?block_id=tuijian_wz" target="_blank">android的匿名内部类监听按钮点击事件</a></li><li><a href="http://www.imooc.com/article/10549?block_id=tuijian_wz" target="_blank">感叹初学java的那些时光</a></li><li><a href="http://www.imooc.com/article/10457?block_id=tuijian_wz" target="_blank">Android中几个常用控件</a></li></ul>
+  </div>  </div>
+</div>
+
+
+
+<div id="footer">
+    <div class="waper">
+        <div class="footerwaper clearfix">
+            <div class="followus r">
+                <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                    <div class="flw-weixin-box"></div>
+                </a>
+                <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+            </div>
+            <div class="footer_intro l">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
+                        <li><a href="http://www.imooc.com/about/job" target="_blank">人才招聘</a></li>
+                        <li> <a href="http://www.imooc.com/about/contact" target="_blank">联系我们</a></li>
+                        <!--<li><a href="/subject/html" target="_blank">专题页面</a></li>-->
+                        <li><a href="http://yun.imooc.com/" target="_blank">慕课云</a></li>
+                        <li><a href="http://www.imooc.com/about/us" target="_blank">关于我们</a></li>
+                        <li> <a href="http://www.imooc.com/about/recruit" target="_blank">讲师招募</a></li>
+                        <li> <a href="http://www.imooc.com/user/feedback" target="_blank">意见反馈</a></li>
+                        <li> <a href="http://www.imooc.com/about/friendly" target="_blank">友情链接</a></li>
+                    </ul>
+                </div>
+                <p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" charset="utf-8" src="./example_files/ueditor.final.min.js"></script>
+
+<script src="./example_files/ssologin.js"></script>
+<script type="text/javascript" src="./example_files/sea.js"></script>
+<script type="text/javascript" src="./example_files/sea_config.js"></script>
+<script type="text/javascript">seajs.use("/static/page/"+OP_CONFIG.module+"/"+OP_CONFIG.page);</script>
+
+
+
+<div style="display: none">
+  <script type="text/javascript">
+  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff0cfcccd7b1393990c78efdeebff3968' type='text/javascript'%3E%3C/script%3E"));
+  </script><script src="./example_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=f0cfcccd7b1393990c78efdeebff3968" target="_blank"><img border="0" src="./example_files/21.gif" width="20" height="20"></a>
+</div><script type="text/javascript" src="./example_files/user"></script><script type="text/javascript" src="./example_files/iplookup.php"></script>
+<!--笔记弹出框-->
+<div class="publish clearfix note-pop" id="note-publist">
+    <div class="publish-wrap publish-wrap-note video-publish-note pop-con">
+        <div class="pop-title">
+            <h3>笔记</h3>
+            <span class="icon-close"></span>
+        </div>
+        <div id="js-note-input-fake" class="textarea-wrap">
+            <textarea data-maxlength="1000" id="js-note-textarea" class="js-placeholder" name="" placeholder="请输入笔记内容..."></textarea>
+            <p class="note-text-counter"><span id="js-note-limit">0</span>/1000</p>
+        </div>
+        <div class="publish-note-btns input-btm clearfix pop-footer">
+            <div class="verify-code clearfix"></div>
+                                            <div title="截图" class="js-shot-video screen-btn" data-type="note">
+                    <span>截图</span>
+                </div>
+                                        <input type="button" title="发表" value="保存" id="js-note-submit" class="course-btn r">
+            <label for="js-isshare" class="label-checked r"><input type="checkbox" checked="checked" id="js-isshare" class="checked"> 公开</label>
+            <!-- <div class="integral-info">
+                <span>本次提问将花费1个积分</span>
+                <a target="_blank" href="/about/faq?t=3">什么是积分？</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!--问答弹出框 通用-->
+<div class="publish clearfix qa-pop" id="discus-publish">
+    <div class="publish-wrap publish-wrap-disucss video-publish-qa pop-con">
+        <div class="pop-title">
+            <h3>提问</h3>
+            <span class="icon-close"></span>
+        </div>
+        <div class="qa-control-wrap clearfix">
+            <div class="question-area">
+                <div class="qa-control qa-ipt-title">
+                    <input type="text" id="js-qa-title" maxlength="255" class="js-placeholder autocomplete" placeholder="请输入问题标题">
+                </div>
+                <a href="http://www.imooc.com/wenda/detail/292353" target="_blank" class="another-meth">如何更好<br>的提问？</a>
+                <dl class="send-area-result">
+                </dl>
+            </div>
+        </div>
+        <div class="qa-control-wrap clearfix">
+            <div class="qa-control">
+                <div class="rich-text-editor">
+                    <div id="discuss-editor" class="edui-imooc" style=""><div id="edui1" class="edui-editor  edui-imooc" style="width: 588px; z-index: 999;"><div id="edui1_toolbarbox" class="edui-editor-toolbarbox edui-imooc"><div id="edui1_toolbarboxouter" class="edui-editor-toolbarboxouter edui-imooc"><div class="edui-editor-toolbarboxinner edui-imooc"><div id="edui2" class="edui-toolbar   edui-imooc" onselectstart="return false;" onmousedown="return $EDITORUI[&quot;edui2&quot;]._onMouseDown(event, this);" style="-webkit-user-select: none;"><div id="edui3" class="edui-box edui-combox edui-for-insertcode edui-imooc"><div title="代码语言" id="edui3_state" onmousedown="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui3&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-combox-body edui-imooc"><div id="edui3_button_body" class="edui-box edui-button-body edui-imooc" onclick="$EDITORUI[&quot;edui3&quot;]._onButtonClick(event, this);">代码语言</div><div class="edui-box edui-splitborder edui-imooc"></div><div class="edui-box edui-arrow edui-imooc" onclick="$EDITORUI[&quot;edui3&quot;]._onArrowClick();"></div></div></div></div><div id="edui17" class="edui-box edui-button edui-for-bold edui-imooc"><div id="edui17_state" onmousedown="$EDITORUI[&quot;edui17&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui17&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui17&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui17&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui17_body" unselectable="on" title="加粗" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui17&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui17&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui18" class="edui-box edui-button edui-for-italic edui-imooc"><div id="edui18_state" onmousedown="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui18&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui18_body" unselectable="on" title="斜体" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui18&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui18&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui19" class="edui-box edui-button edui-for-underline edui-imooc"><div id="edui19_state" onmousedown="$EDITORUI[&quot;edui19&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui19&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui19&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui19&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui19_body" unselectable="on" title="下划线" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui19&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui19&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui26" class="edui-box edui-button edui-for-insertimage edui-imooc"><div id="edui26_state" onmousedown="$EDITORUI[&quot;edui26&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui26&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui26&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui26&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui26_body" unselectable="on" title="多图上传" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui26&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui26&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div><div class="edui-box edui-label edui-imooc"></div></div></div></div></div><div id="edui31" class="edui-box edui-button edui-for-link edui-imooc"><div id="edui31_state" onmousedown="$EDITORUI[&quot;edui31&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui31&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui31&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui31&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui31_body" unselectable="on" title="超链接" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui31&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui31&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div><div class="edui-box edui-label edui-imooc"></div></div></div></div></div><div id="edui32" class="edui-box edui-button edui-for-unlink edui-imooc"><div id="edui32_state" onmousedown="$EDITORUI[&quot;edui32&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui32&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui32&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui32&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui32_body" unselectable="on" title="取消链接" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui32&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui32&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui33" class="edui-box edui-button edui-for-insertunorderedlist edui-imooc"><div id="edui33_state" onmousedown="$EDITORUI[&quot;edui33&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui33&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui33&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui33&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui33_body" unselectable="on" title="无序列表" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui33&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui33&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div><div class="edui-box edui-label edui-imooc"></div></div></div></div></div><div id="edui34" class="edui-box edui-button edui-for-insertorderedlist edui-imooc"><div id="edui34_state" onmousedown="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui34&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui34_body" unselectable="on" title="有序列表" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui34&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui34&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div><div class="edui-box edui-label edui-imooc"></div></div></div></div></div><div id="edui35" class="edui-box edui-button edui-for-blockquote edui-imooc"><div id="edui35_state" onmousedown="$EDITORUI[&quot;edui35&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui35&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui35&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui35&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui35_body" unselectable="on" title="引用" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui35&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui35&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui36" class="edui-box edui-button edui-for-redo edui-imooc"><div id="edui36_state" onmousedown="$EDITORUI[&quot;edui36&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui36&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui36&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui36&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui36_body" unselectable="on" title="重做" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui36&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui36&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui37" class="edui-box edui-button edui-for-undo edui-imooc"><div id="edui37_state" onmousedown="$EDITORUI[&quot;edui37&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui37&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui37&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui37&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui37_body" unselectable="on" title="撤销" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui37&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui37&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div></div></div></div></div><div id="edui40" class="edui-box edui-button edui-for-preview edui-imooc"><div id="edui40_state" onmousedown="$EDITORUI[&quot;edui40&quot;].Stateful_onMouseDown(event, this);" onmouseup="$EDITORUI[&quot;edui40&quot;].Stateful_onMouseUp(event, this);" onmouseover="$EDITORUI[&quot;edui40&quot;].Stateful_onMouseOver(event, this);" onmouseout="$EDITORUI[&quot;edui40&quot;].Stateful_onMouseOut(event, this);" class="edui-imooc"><div class="edui-button-wrap edui-imooc"><div id="edui40_body" unselectable="on" title="预览" class="edui-button-body edui-imooc" onmousedown="return $EDITORUI[&quot;edui40&quot;]._onMouseDown(event, this);" onclick="return $EDITORUI[&quot;edui40&quot;]._onClick(event, this);"><div class="edui-box edui-icon edui-imooc"></div><div class="edui-box edui-label edui-imooc"></div></div></div></div></div></div></div></div><div id="edui1_toolbarmsg" class="edui-editor-toolbarmsg edui-imooc" style="display:none;"><div id="edui1_upload_dialog" class="edui-editor-toolbarmsg-upload edui-imooc" onclick="$EDITORUI[&quot;edui1&quot;].showWordImageDialog();">点击上传</div><div class="edui-editor-toolbarmsg-close edui-imooc" onclick="$EDITORUI[&quot;edui1&quot;].hideToolbarMsg();">x</div><div id="edui1_toolbarmsg_label" class="edui-editor-toolbarmsg-label edui-imooc"></div><div style="height:0;overflow:hidden;clear:both;" class="edui-imooc"></div></div><div id="edui1_message_holder" class="edui-editor-messageholder edui-imooc" style="top: 3px; z-index: 1000;"></div></div><div id="edui1_iframeholder" class="edui-editor-iframeholder edui-imooc" style="width: 588px; height: 150px; z-index: 999; overflow: hidden;"><iframe id="ueditor_0" width="100%" height="100%" frameborder="0" src="javascript:void(function(){document.open();document.write("<!DOCTYPE html><html xmlns='http://www.w3.org/1999/xhtml' class='view' ><head><style type='text/css'>.view{padding:0;word-wrap:break-word;cursor:text;height:90%;}
+body{margin:8px;font-family:sans-serif;font-size:16px;}p{margin:5px 0;}</style><link rel='stylesheet' type='text/css' href='http://www.imooc.com/static/lib/ueditor/themes/iframe.css'/><style>p{line-height:1.5em;font-size:13px;color:#444}</style></head><body class='view' ></body><script type='text/javascript'  id='_initialScript'>setTimeout(function(){editor = window.parent.UE.instants['ueditorInstant0'];editor._setup(document);},0);var _tmpScript = document.getElementById('_initialScript');_tmpScript.parentNode.removeChild(_tmpScript);</script></html>");document.close();}())"></iframe></div><div id="edui1_bottombar" class="edui-editor-bottomContainer edui-imooc"><table class="edui-imooc"><tbody class="edui-imooc"><tr class="edui-imooc"><td id="edui1_elementpath" class="edui-editor-bottombar edui-imooc" style="display: none;"></td><td id="edui1_wordcount" class="edui-editor-wordcount edui-imooc" style="display: none;"></td><td id="edui1_scale" class="edui-editor-scale edui-imooc" style="display: none;"><div class="edui-editor-icon edui-imooc"></div></td></tr></tbody></table></div><div id="edui1_scalelayer" class="edui-imooc"></div></div></div><textarea style="display: none;">请输入讨论内容...</textarea>
+                </div>
+            </div>
+        </div>
+        <div id="js-discuss-btm" class="discuss-bottom input-btm clearfix pop-footer">
+            <div class="verify-code clearfix"><input type="text" maxlength="4" class="verify-code-ipt" placeholder="请输入验证码"><a class="verify-img-wrap js-verify-refresh" hidefocus="true" href="javascript:void(0)"><img class="verify-img" src="./example_files/getcoursequestioncode"></a><a class="icon-refresh js-verify-refresh" hidefocus="true" href="javascript:void(0)"></a><span class="errtip"></span></div>
+                                            <div title="截图" class="js-shot-video screen-btn" data-type="qa">
+                    <span>截图</span>
+                </div>
+                                        <input id="js-discuss-submit" class="r course-btn" type="button" value="发布">
+        </div>
+        <div id="use-credit-tip" class="use-credit-tip">
+            <span class="credit-info">本次提问将花费2个积分</span>
+            <a class="credit-rule" href="http://www.imooc.com/about/faq?t=3" target="_blank">为什么扣积分？</a>
+        </div>
+    </div>
+</div>
+
+<!--积分弹出框-->
+<div class="integral-pop" id="no-credit">
+    <div class="pop-con">
+        <span class="icon-point"></span>
+                    <p>本次提问将花费2个积分</p>
+                <p>你的积分不足，无法发表</p>
+        <a class="integral-rule" href="http://www.imooc.com/about/faq?t=3" target="_blank">为什么扣积分？</a>
+        <div class="ft clearfix">
+            <a href="javascript:void(0)" class="btn btn-green l cancel-cf">确认</a>
+            <a href="javascript:void(0)" class="btn btn-grey r cancel-cf">取消</a>
+        </div>
+    </div>
+</div>
+<div class="integral-pop" id="enough-credit">
+    <div class="pop-con">
+        <span class="icon-point"></span>
+                    <p>本次提问将花费2个积分</p>
+                <p>继续发表请点击 "确定"</p>
+        <a class="integral-rule" href="http://www.imooc.com/about/faq?t=3" target="_blank">为什么扣积分？</a>
+        <div class="ft clearfix">
+            <a id="interal-use" href="javascript:void(0)" class="btn btn-green l">确认</a>
+            <a id="interal-cancel" href="javascript:void(0)" class="btn btn-grey r">取消</a>
+        </div>
+    </div>
+</div>
+
+<!--WIKI弹出框 通用-->
+<div class="publish clearfix wiki-pop" id="wiki-publish">
+    <div class="publish-wrap publish-wrap-disucss pop-con">
+        <div class="pop-title">
+            <h3>搜索WIKI</h3>
+            <span class="icon-close"></span>
+        </div>
+        
+        <div class="search_box clearfix">
+            <input class="search_ipt" type="text" placeholder="输入你想要找的WiKi词条名称">
+            <input type="button" value="搜索" class="search_btn">
+            <a class="createwiki" href="http://www.imooc.com/wiki/create" target="_blank">创建wiki</a>
+        </div>
+        
+        <div id="js-search-area-result" class="search-area-result">
+        </div>
+    </div>
+</div>
+
+<div id="video_mark" class="video_mark" style="display:none;"></div>
+<!--<div class="fixed-video js-fixed-video">-->
+    <!--<h3>点击按住该条进行拖动</h3>-->
+    <!--<div class="fixed-video-con"></div>-->
+<!--</div>-->
+<!--
+//此处结构在js里插入
+<div class="animate-mp" style="left:50%;top:50%">-->
+    <!--<p class="mp"><i>+</i><span class="num">8</span>MP</p>-->
+    <!--<p class="desc">haha</p>-->
+<!--</div>-->
+
+
+<div id="edui_fixedlayer" class="edui-imooc" style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px;"><div id="edui41" class="edui-popup  edui-bubble edui-imooc" onmousedown="return false;" style="display: none;"> <div id="edui41_body" class="edui-popup-body edui-imooc"> <iframe style="position:absolute;z-index:-1;left:0;top:0;background-color: transparent;" frameborder="0" width="100%" height="100%" src="about:blank" class="edui-imooc"></iframe> <div class="edui-shadow edui-imooc"></div> <div id="edui41_content" class="edui-popup-content edui-imooc">  </div> </div></div></div><div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="http://www.imooc.com/static/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.swf?noCache=1468848156442"><param name="allowScriptAccess" value="sameDomain"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=www.imooc.com%2C%2F%2Fwww.imooc.com%2Chttp%3A%2F%2Fwww.imooc.com"></object></div></body></html>
